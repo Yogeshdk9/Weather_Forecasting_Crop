@@ -1,0 +1,108 @@
+@charset "ISO-8859-1";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+body{
+    /*background-color: rgba(0, 0, 0, 0.9);*/
+    background-image: url(images/Weather.jpg);
+    background-size: cover;
+    background-position:top center;
+    background-attachment: fixed;
+}
+
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+header input{
+    width: 100%;
+    max-width: 200px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+     margin-right: 20px;
+}
+header input:focus{
+    background: rgba(255.255.255.0.6);
+}
+::placeholder{
+
+  font-size: 15px;
+}
+  
+  .services-section{
+    background-size: cover;
+    padding: 60px 0;
+  }
+  .inner-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+
+  .services-container{
+    display: flex;
+    justify-content: center;
+  }
+  
+ .service-box{
+    max-width: 33.33%;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+
+    
+  }
+  
+  .location{
+     display: inline-block;
+ 
+    margin-bottom: 30px;
+    margin-top: 16px;
+  }
+ 
+  .current{
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .service-desc{
+    font-size: 14px;
+  }
+  
+  @media screen and (max-width:960px) {
+    .service-box{
+      max-width: 45%;
+    }
+  }
+  
+  @media screen and (max-width:768px) {
+    .service-box{
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width:480px) {
+    .service-box{
+      max-width: 100%;
+    }
+  }
+   .location h4{
+    text-align: center;
+ 
+    
+  }
+.current h4{
+  text-align: center;
+
+}
+  
